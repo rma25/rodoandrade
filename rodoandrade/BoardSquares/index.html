@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Board Squares, squares, board, boardsquares, superbowl, footbal, nfl, Rodo Andrade">
+  <meta name="description" content="A friendly board squares football game between friends.">
+  <meta name="author" content="Rodo Andrade">
+  <!-- LinkedIn: https://www.linkedin.com/in/rodoandrade/-->
+
+  <link rel="icon" href="./Images/Icons/superbowl-trophy-icon.ico">
+  <title>Board Squares</title>
+
+  <!-- Apache License for ServiceWorker-->
+  <!-- http://www.apache.org/licenses/LICENSE-2.0 -->
+
+  <!--Font Awesome Icons-->
+  <!--License https://fontawesome.com/license/free-->
+  <link rel="stylesheet" href="./Styles/fonts/fontawesome-free-5.5.0-web/css/all.min.css">
+
+  <!-- Bootstrap 4 core CSS -->
+  <link href="./Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate -->
+  <!-- License https://github.com/daneden/animate.css/blob/master/LICENSE-->
+  <link rel="stylesheet" href="./Styles/Animate3.7.0.css">
+
+  <!-- Custom styles for this template -->
+  <link href="./Styles/Custom/boardsquares.css" rel="stylesheet">
+</head>
+
+<body class="text-center customBody">
+
+  <!-- Content -->
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead" style="margin-bottom: 20rem!important;">
+      <div class="inner">
+
+        <h3 class="masthead-brand"><img class="rounded" src="./Images/Logos/superbowl-trophy.png" alt="SuperBowlTrophy">Board
+          Squares</h3>
+        <nav class="nav nav-masthead justify-content-center customLink">
+          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="./Views/Squares.html">Squares</a>
+          <a class="nav-link" href="#" class="txt1" data-toggle="modal" data-target="#loginModal">
+            Login
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <section>
+      <h1 class="cover-heading custom-text-shadow">Super Bowl</h1>
+      <p class="lead custom-text-shadow font-weight-bold">Choose your squares before the Superbowl ends!</p>
+      <a class="btn btn-lg btn-primary" href="./Views/Squares.html" role="button">Learn more</a>
+    </section>
+  </div>
+
+  <!-- Modals-->
+  <section>
+    <!--Forgot Username Password Modal-->
+    <section>
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="loginModalTitle">Sign In</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <!--TODO: Must implement Login Actions-->
+                <form class="my-2 my-lg-0 ">
+                  <div class="row">
+                    <div class="col-12 input-group mb-3">
+                      <div class="input-group-prepend justify-content-between">
+                        <span class="input-group-text text-light bg-dark" id="basic-addon1">
+                          <i class="far fa-envelope loginIcons"></i>
+                        </span>
+                      </div>
+                      <input class="form-control mr-sm-2" id="userEmail" type="email" placeholder="Email@gmail.com"
+                        aria-label="Email" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 input-group mb-3">
+                      <div class="input-group-prepend justify-content-between">
+                        <span class="input-group-text text-light bg-dark" id="basic-addon1">
+                          <i class="fas fa-key loginIcons"></i>
+                        </span>
+                      </div>
+                      <input class="form-control mr-sm-2" id="userPassword" type="password" placeholder="Password"
+                        aria-label="Password" required>
+                    </div>
+                  </div>
+                  <div class="row hideEverything signUp">
+                    <div class="col-12 input-group mb-3">
+                      <div class="input-group-prepend justify-content-between">
+                        <span class="input-group-text text-light bg-dark" id="basic-addon1">
+                          <i class="fas fa-key loginIcons"></i>
+                        </span>
+                      </div>
+                      <input class="form-control mr-sm-2" id="userPasswordConfirm" type="password" placeholder="Confirm Password"
+                        aria-label="Confirm Password" required>
+                    </div>
+                  </div>
+                  <div class="row hideEverything signUp">
+                    <div class="col-12 input-group mb-3">
+                      <div class="input-group-prepend justify-content-between">
+                        <span class="input-group-text text-light bg-dark pr-3" id="basic-addon1">
+                          <i class="fas fa-user loginIcons"></i>
+                        </span>
+                      </div>
+                      <input class="form-control mr-sm-2" id="userFirstName" type="text" placeholder="First Name"
+                        aria-label="First Name" required>
+                    </div>
+                  </div>
+                  <div class="row hideEverything signUp">
+                    <div class="col-12 input-group mb-3">
+                      <div class="input-group-prepend justify-content-between">
+                        <span class="input-group-text text-light bg-dark pr-3" id="basic-addon1">
+                          <i class="fas fa-user loginIcons"></i>
+                        </span>
+                      </div>
+                      <input class="form-control mr-sm-2" id="userLastName" type="text" placeholder="Last Name"
+                        aria-label="Last Name" required>
+                    </div>
+                  </div>
+                </form>
+                <div id="serverMessage">
+                  <!-- Display through Java Script-->
+                </div>
+              </div>
+            </div>
+            <div class="p-3 border-top container">
+              <div class="row">
+                <div class="col-3 col-sm-3">
+                  <button type="button" class="btn btn-primary grow" id="signUpButton">Sign Up</button>
+                </div>
+                <div class="col-3 col-sm-5"></div>
+                <div class="col-6 col-sm-4">
+                  <button type="button" class="btn btn-danger grow" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success grow" id="loginModalBtn">Login</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="./Scripts/Jquery-3.3.1.js"></script>
+  <script src="./Scripts/popper.min.js"></script>
+  <script src="./Styles/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="./Scripts/holder.min.js"></script>
+
+  <!--Custom-->
+  <script src="./Scripts/Custom/DeferImages.js"></script>
+  <script src="./Scripts/Custom/squares.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+
+/*
+ * Globals
+ */
+
+/* Links */
+.customLink a,
+.customLink a:focus,
+.customLink a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html {
+  height: 100%;
+  background-color: #333;
+}
+
+.customBody {
+  background: url(../../Images/Covers/cover-6.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;  
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  height: 100%;
+  background-color: #333;
+}
+
+.customBody2{
+  background: url(../../Images/Covers/cover-6.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: -ms-flexbox;    
+    color: #fff;    
+    height: 100%;
+    background-color: #333;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+.gradientHoverColdGrey:hover {
+  background: #2c3e50 !important; /* fallback for old browsers */
+  border-radius: .25rem !important;
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+  color: #fff !important;
+}
+
+  .gradientHoverColdGrey:hover a,
+  .gradientHoverColdGrey:hover button {
+      color: #fff !important;
+  }
+
+  .grow:hover
+{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.growBig:hover
+{
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+/*Adds shadow text */
+.custom-text-shadow{
+  text-shadow: 0px 4px 3px rgba(0,0,0,1),
+    0px 8px 13px rgba(0,0,0,0.5),
+    0px 18px 23px rgba(0,0,0,0.1);    
+}
+
+
+.navBarCustom {
+  background: #000000 !important;
+  border-radius: .25rem !important;
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;  
+  font-weight: 700;  
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+  .navBarCustom a {
+      color: #fff !important;
+  }
+
+  .nav-item-custom{
+    font-size: 1.1rem;
+  }
+
+  .accordion-custom{    
+      background: #2c3e50 !important;
+      border-radius: .25rem !important;
+      border-top-left-radius: 0.25rem !important;
+      border-top-right-radius: 0.25rem !important;
+      border-bottom-right-radius: 0.25rem !important;
+      border-bottom-left-radius: 0.25rem !important;    
+  }
+
+  .accordion-btn {
+    color: #fff !important;
+    font-size: 1.25rem !important;
+    width: 100%;
+}
+
+.loadingIcon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    font-family: 'Spicy Rice', cursive;
+    font-size: 3rem;
+    display: none;
+}
+
+.remainingNumber{
+  color:#ff0000;
+}
+  
+.sideWaysText{
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+}
+
+.customTitle{
+  font-size: 1.25rem;
+}
+
+.customMoney{
+  font-size:1.3rem!important;
+}
+
+.hideEverything{
+  display:none;
+}
+
+div[id*='cardContent']{
+  background-color: #0c0c0c;
+  padding-bottom: .25rem!important;  
+}
+
+.loginIcons{
+  font-size:1.6rem;
+}
+
+.px-3-5{
+  padding-left:.75rem!important;
+  padding-right:.75rem!important;
+}
+
+.clickable{    
+  padding-top: 1rem!important;
+  padding-bottom: 1rem!important;
+}
+
+.squareButton{
+  color:#F5F1ED!important;
+  font-size:1rem;
+}
+
+.squareButton:after{
+  background-color: #70798C!important;    
+}
+
+/*Make content scrollable while not displaying the scrollbar*/
+.squaresContent{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrollContent{
+  width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box; /* So the width will be 100% + 17px */
+}
+
+.leftTitle{
+  font-size:1rem;
+}
+
+
+/*Responsive*/
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */  
+  .squareValue, .item, .squareValue3{
+    font-size: 0.55rem;
+    margin-left: -1rem;
+    padding-right:0rem!important;
+  }
+  .leftTitle{
+    font-size: 0.55rem;
+  }
+  .squareButton{
+    padding-left: 0.25rem!important;
+    padding-right: 0.25rem!important;
+  }
+  /*Hide the Claimed Square Text*/    
+  .claimedValue {
+    text-indent: -9999px;    
+  }
+  .squareValue2{
+    font-size: 0.55rem;  
+    padding-left: 0rem;
+    /*Leave it 1 so it works with Iphone 5 and older*/
+    padding-right: 1rem;
+    margin-left: -0.05rem;
+  }
+ }
+
+ @media (min-width:448px){  
+  .squareValue2{
+    font-size: 0.55rem;  
+    padding-left: 0rem;
+    padding-right: 1.75rem;
+    margin-left: 0rem!important;    
+  } 
+   /*Hide the Claimed Square Text*/    
+   .claimedValue {
+    text-indent: 0rem!important;    
+    margin-left: -0.3rem!important;
+  }
+ }
+
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */  
+  .squareValue, .item{
+    font-size: 0.65rem;    
+  }
+  .squareValue2{
+    font-size: 0.85rem;
+    padding-left: 0px;
+    padding-right: 2.1rem!important;
+  }  
+  .squareValue3, .leftTitle{
+    font-size: 0.85rem;
+  }
+ }
+
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */   
+  .squareValue, .item{
+    font-size: 0.75rem;
+    margin-left: -0.65rem;
+  }
+  .squareValue2{
+    font-size: 0.95rem;
+    padding-right: 2rem!important;
+    padding-left: 0rem;
+  }  
+  .squareValue3, .leftTitle{
+    font-size: 0.95rem;
+  }
+}
+
+/*Normal from here down*/
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */   
+  .squareValue, .item{
+    font-size: 0.85rem;
+    margin-left: -0.3rem;
+  }  
+  .squareValue2, .squareValue3, .leftTitle{
+    font-size: 1.2rem;    
+  }
+  .squareValue2{
+    padding-right: 2.5rem!important;
+  }
+}
+
+/*This is only for the horizontal score*/
+@media (min-width:830px){
+  .squareValue2{
+    padding-right: 3rem!important;
+    padding-left: 0.75rem!important;
+  }
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */  
+  .squareValue, .item,.leftTitle{
+    font-size: 1rem;
+    margin-left: -0.5rem;
+  }  
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */  
+  .squareValue, .item{
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+  .squareValue2, .leftTitle{
+    font-size:1.2rem;    
+  }   
+}
+
+/*In case the phone is too short or flipped*/
+@media (max-height:640px){
+  .clickable{
+    padding-top: 0.75rem!important;
+    padding-bottom: 0.75rem!important;
+  }
+}
+
+/*Iphone 5 or older*/
+@media (max-height:568px){
+  .clickable{
+    padding-top: 0.55rem!important;
+    padding-bottom: 0.55rem!important;
+  }
+}
