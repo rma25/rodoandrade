@@ -313,3 +313,13 @@ footer p {
               padding-left: 25px;
           }
 }
+
+.linkedInIcon{
+    font-size:2rem!important;
+    color:#fff!important;
+}
+
+.gitIcon{
+    font-size:2rem!important;
+    color:#fff!important;
+}
