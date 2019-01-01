@@ -134,6 +134,7 @@ footer p {
       left: 0;
       background-size: cover;
       background-position: center;
+      cursor:pointer;
       /* transition: -webkit-transform .2s;
       transition: transform .2s;
       transition: transform .2s, -webkit-transform .2s; */
@@ -268,6 +269,7 @@ footer p {
 
   .blog-card:hover .details {
       left: 0%;
+      cursor: pointer;
   }
 
 @media (min-width: 640px) {
