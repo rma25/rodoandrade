@@ -1,390 +1,486 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="keywords" content="Rodo Andrade, rodo, andrade, software engineer, web developer, full stack, senior software developer, developer, senior software engineer">
-  <meta name="description" content="This is a portfolio website, meant to display some of my work.">
-  <meta name="author" content="Rodo Andrade">
-  <!-- LinkedIn: https://www.linkedin.com/in/rodoandrade/-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords"
+        content="Rodo Andrade, rodo, andrade, software engineer, web developer, full stack, senior software developer, developer, senior software engineer">
+    <meta name="description" content="Portfolio website meant to display some of my work.">
+    <meta name="author" content="Rodo Andrade" />
 
-  <link rel="icon" href="./Images/Logos/ra.ico">
-  <title>Rodo Andrade</title>
+    <title>Rodo Andrade</title>
 
-  <!-- Apache License for ServiceWorker-->
-  <!-- http://www.apache.org/licenses/LICENSE-2.0 -->
+    <!-- Web Logo -->
+    <link rel="icon" href="./images/Icons/ra.ico" />
 
-  <!--Font Awesome Icons-->
-  <!--License https://fontawesome.com/license/free-->
-  <link rel="stylesheet" href="./Styles/fonts/fontawesome-free-5.5.0-web/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 
-  <!-- Bootstrap 4 core CSS -->
-  <link href="./Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Animate -->
-  <!-- License https://github.com/daneden/animate.css/blob/master/LICENSE-->
-  <link rel="stylesheet" href="./Styles/Animate3.7.0.css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="./Styles/Custom/rodoandrade.css" rel="stylesheet">
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/plugins.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="anim pulse"><i class="ion-ios-bolt-outline"></i></div>
+    </div>
+    <div class="preloader-left"></div>
+    <div class="inline-menu-container">
+        <span class="status contact menu-item">I am available for freelance</span>
+        <ul class="inline-menu">
+            <li class="about menu-item">Resume</li>
+            <li class="portfolio menu-item">Portfolio</li>
+            <li class="contact menu-item">Contact</li>
+            <li id="close" class="menu-item"><i class="ion-ios-close-empty"></i></li>
+        </ul>
+    </div>
+    <section class="home img-bg" style="background: url(./images/coder-1.jpg) 0 0; background-size: cover;">
+        <div class="overlay opacity5"></div>
+        <div class="container">
+            <div class="name-block">
+                <div class="name-block-container">
+                    <h1><span>Hi, I'm</span>Rodo Andrade</h1>
+                    <h2>Software Engineer</h2>
+                    <a target="_blank" href="./files/Rodo Andrade - Job Resume.docx" class="btn btn-download">Download
+                        Resume</a>
+                    <!-- <ul class="social">
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="menu-blocks">
+                <div class="about-block menu-block">
+                    <div class="about-block-container">
+                        <h2 class="about menu-item">Resume</h2>
+                    </div>
+                </div>
+                <div class="portfolio-block  menu-block">
+                    <div class="portfolio-block-container">
+                        <h2 class="portfolio menu-item">Portfolio</h2>
+                    </div>
+                </div>
+                <!-- <div class="blog-block  menu-block">
+                    <div class="blog-block-container">
+                        <h2 class="blog menu-item">Blog</h2>
+                    </div>
+                </div> -->
+                <div class="contact-block  menu-block">
+                    <div class="contact-block-container">
+                        <h2 class="contact menu-item">Contact</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Resume -->
+            <div class="content-blocks about">
+                <section class="content" id="about">
+                    <div class="block-content">
+                        <h3 class="block-title">Profile</h3>
+                        <h3 class="subheading">I'm a <strong>Full Stack Software Developer</strong> from Brunswick, OH.
+                            I aim to make a difference through my creative solution.</h3>
+                        <p>Worked with project teams to create user-friendly and appealing application interfaces and
+                            websites for users. Met with project manager, business analyst and architect right from
+                            beginning of project, creating rough mock-ups that were refined and extended over many
+                            iterations. Adjustments to mock-ups as necessary to address problems encountered.</p>
+                        <div class="info-list row">
+                            <div class="col-sm-6"><span>Name : </span> Rodo Andrade</div>
+                            <!-- <div class="col-sm-6"><span>Date of birth : </span> Decmber 6, 1991 </div> -->
+                            <div class="col-sm-6"><span>Address : </span> 4925 Treeline Dr, Brunswick OH 44212</div>
+                            <div class="col-sm-6"><span>Email : </span> rodo.andrade00111@gmail.com</div>
+                            <div class="col-sm-6"><span>Phone : </span> +1 216-618-7751</div>
+                            <!-- <div class="col-sm-6"><span>Skype : </span> James.Bond</div> -->
+                            <div class="col-sm-6"><span>Interest : </span> freelance, full-time</div>
+                        </div>
+                        <img class="sign" src="./images/signature.PNG" alt="" />
+                    </div>
+                    <div class="block-content">
+                        <h3 class="block-title">Skills</h3>
+                        <label class="progress-bar-label">C# - <span>5 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 95%;" class="progress-bar" role="progressbar" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">.NET# - <span>5 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 90%;" class="progress-bar" role="progressbar" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">SQL - <span>5 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 80%;" class="progress-bar" role="progressbar" aria-valuenow="69"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">HTML&amp;CSS - <span>5 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 95%;" class="progress-bar" role="progressbar" aria-valuenow="99"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">Javascript - <span>5 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 85%;" class="progress-bar" role="progressbar" aria-valuenow="67"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">JQuery - <span>5 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 85%;" class="progress-bar" role="progressbar" aria-valuenow="67"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">VB.NET - <span>5 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 95%;" class="progress-bar" role="progressbar" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content">
+                        <h3 class="block-title">Experience</h3>
+                        <div class="timeline experience">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="exp-holder">
+                                        <div class="exp">
+                                            <div class="hgroup">
+                                                <h4><span>Software Engineer III</span> @ Kenan Advantage Group</h4>
+                                                <h5>Oct 2018 - <span class="current">Present</span></h5>
+                                            </div>
+                                            <p>
+                                                Developing complete solutions from skretch using MVC Architecture, .NET
+                                                Core/Framework, C#, SQL, HTML, CSS, and Javascript.
+                                            </p>
+                                        </div>
+                                        <div class="exp">
+                                            <div class="hgroup">
+                                                <h4><span>Software Engineer II</span> @ AmTrust Financial Group </h4>
+                                                <h5>Oct 2016 - Oct 2018</h5>
+                                            </div>
+                                            <p>
+                                                Redesigned, and implemented crucial integrated applications to improve
+                                                the performance of several automated softwares.
+                                            </p>
+                                        </div>
+                                        <div class="exp">
+                                            <div class="hgroup">
+                                                <h4><span>Software Engineer I</span> @ Rovisys </h4>
+                                                <h5>July 2015 - Oct 2016</h5>
+                                            </div>
+                                            <p>
+                                                Supported & Developed complete applications with multiple teams, in
+                                                parallel with a diversity of projects using different tech stack.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content">
+                        <h3 class="block-title">Education</h3>
+                        <div class="timeline education">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="exp-holder">
+                                        <div class="exp">
+                                            <div class="hgroup">
+                                                <h4>Bachelor of Computer Science | <span>The University of Akron</span>
+                                                </h4>
+                                                <h5>Aug 2010 - Aug 2015</h5>
+                                            </div>
+                                            <p>
+                                                Completed several computer science & mathematical courses to expand
+                                                critical thinking, and software developer abilities.
+                                            </p>
+                                        </div>
+                                        <div class="exp">
+                                            <div class="hgroup">
+                                                <h4>Minor in Business Administration | <span>Cambridge University</span>
+                                                </h4>
+                                                <h5>Aug 2012 - Aug 2015</h5>
+                                            </div>
+                                            <p>
+                                                Earned intelectual property on multiple introduction courses of a
+                                                business administration, including Marketing, Accounting, and others.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content">
+                        <h3 class="block-title">Services</h3>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 service">
+                                <div class="service-icon">
+                                    <i class="ion-laptop"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                <p>Implemented multiple websites with different tech stacks.</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 service">
+                                <div class="service-icon">
+                                    <i class="ion-pie-graph"></i>
+                                </div>
+                                <h4>App Development</h4>
+                                <p>Created automated solutions to improve the performance of the business.</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 service">
+                                <div class="service-icon">
+                                    <i class="ion-social-buffer"></i>
+                                </div>
+                                <h4>Association for Computing Machinery (ACM)</h4>
+                                <p>Participated in ACM programming challenges, and competitions.</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 service">
+                                <div class="service-icon">
+                                    <i class="ion-qr-scanner"></i>
+                                </div>
+                                <h4>Emerging Leader</h4>
+                                <p>Implemented the "Free Hug" program on the second week of school, and was rewarded
+                                    with a picture of myself holding the sign on the main school restaurant.</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 service">
+                                <div class="service-icon">
+                                    <i class="ion-qr-scanner"></i>
+                                </div>
+                                <h4>Major Events</h4>
+                                <p>Mentored new Emerging Leaders, and coordinated major events at the University.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content">
+                        <h3 class="block-title">Awards</h3>
+                        <div class="row">
+                            <div class="col awards">
+                                <img src="./images/Awards/certificate-1.PNG" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="block-content">
+                        <h3 class="block-title">Testimonials</h3>
+                        <div class="row">
+                            <div id="liontestimonial" class="owl-carousel owl-theme">
+                                <div class="item testimonials">
+                                    <img src="images/testimonials/1.jpg" alt="">
+                                    <blockquote>This template is exactly what we were looking for!
+                                        <p class="quote"><span>Brendon Rodgers</span> - CEO of xyz.com</p>
+                                    </blockquote>
+                                </div>
+                                <div class="item testimonials">
+                                    <img src="images/testimonials/2.jpg" alt="">
+                                    <blockquote>This template is very nice! Great work
+                                        <p class="quote"><span>Becky Allwood</span> - CEO of abc.com</p>
+                                    </blockquote>
+                                </div>
+                                <div class="item testimonials">
+                                    <img src="images/testimonials/3.jpg" alt="">
+                                    <blockquote>My work has been significantly simplified.
+                                        <p class="quote"><span>Elly Page</span> - CEO of nfl.com</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="row text-center">
+                        <div class="col-md-12 btn-email">
+                            <a class="btn lowercase">rodoandrade.com</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Portfolio -->
+            <div class="content-blocks portfolio">
+                <section class="content">
+                    <div class="block-content">
+                        <h3 class="block-title">Portfolio</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="filters">
+                                    <span>Filters :</span>
+                                    <ul id="filters">
+                                        <li class="active" data-filter="*">All</li>
+                                        <li data-filter=".bilingual">Bilingual</li>
+                                        <li data-filter=".game">Game</li>
+                                        <li data-filter=".personal">Personal</li>
+                                    </ul>
+                                </div>
+                                <div class="portfolio-container row isotope" id="portfolio-container">
+                                    <!-- WORK 1 START -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item bilingual">
+                                        <a class="open-project" href="https://www.ohiospiritism.com">
+                                            <div class="portfolio-column">
+                                                <div class="portfolio-hover">
+                                                    <div class="portfolio-content">
+                                                        <h2>OHIO SPIRITISM</h2>
+                                                        <hr>
+                                                        <p>View details.</p>
+                                                    </div>
+                                                    <div class="portfolio-overlay"></div>
+                                                </div>
+                                                <img src="./images/Portfolio/OhioSpiritism.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- WORK 1 END -->
+                                    <!-- WORK 2 START -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item game">
+                                        <a class="open-project" href="./BoardSquares/index.html">
+                                            <div class="portfolio-column">
+                                                <div class="portfolio-hover">
+                                                    <div class="portfolio-content">
+                                                        <h2>BOARD SQUARES</h2>
+                                                        <hr>
+                                                        <p>View details.</p>
+                                                    </div>
+                                                    <div class="portfolio-overlay"></div>
+                                                </div>
+                                                <img src="./images/Portfolio/BoardSquares.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- WORK 2 END -->
+                                    <!-- WORK 3 START -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item personal">
+                                        <a class="open-project" href="https://cookiesgallery.com">
+                                            <div class="portfolio-column">
+                                                <div class="portfolio-hover">
+                                                    <div class="portfolio-content">
+                                                        <h2>COOKIES GALLERY</h2>
+                                                        <hr>
+                                                        <p>View details.</p>
+                                                    </div>
+                                                    <div class="portfolio-overlay"></div>
+                                                </div>
+                                                <img src="./images/Portfolio/CookiesGallery.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- WORK 3 END -->
+                                    <!-- WORK 4 START -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item game">
+                                        <a class="open-project" href="./FirstAndLast/index.html">
+                                            <div class="portfolio-column">
+                                                <div class="portfolio-hover">
+                                                    <div class="portfolio-content">
+                                                        <h2>FIRST AND LAST GAME</h2>
+                                                        <hr>
+                                                        <p>View details.</p>
+                                                    </div>
+                                                    <div class="portfolio-overlay"></div>
+                                                </div>
+                                                <img src="./images/Portfolio/FirstAndLast.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- WORK 4 END -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12 btn-email">
+                            <a class="btn lowercase">rodoandrade.com</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Contact-->
+            <div class="content-blocks contact">
+                <section class="content">
+                    <div class="block-content">
+                        <h3 class="block-title">Get in touch</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form id="contactForm" data-toggle="validator" class="contact-form shake">
+                                    <div class="form-group">
+                                        <input id="name" type="text" class="form-control" name="Name" autocomplete="off"
+                                            required data-error="Please enter your name" placeholder="* Your Name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="email" type="email" class="form-control" name="email"
+                                            autocomplete="off" required data-error="Please enter your email"
+                                            placeholder="* Your Email">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="message" class="form-control textarea" rows="10" name="Message"
+                                            required data-error="Please enter your message subject"
+                                            placeholder="* Your Message"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button id="submit" type="submit" class="btn selected">Send Message</button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    </div>
+                                </form>
+                            </div>
 
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top  bg-dark shadow-sm">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <strong>Rodo Andrade</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item grow">
-              <a class="nav-link py-1" href="https://www.linkedin.com/in/rodoandrade/">
-                <i class="fab fa-linkedin linkedInIcon"></i>
-              </a>
-            </li>
-            <li class="nav-item grow">
-              <a class="nav-link py-1" href="https://github.com/rma25"><i class="fab fa-github gitIcon"></i></a>
-            </li>
-          </ul>
+                            <div class="col-md-5 offset-md-1">
+                                <div class="contact-content">
+                                    <div class="contact-icon">
+                                        <i class="ion-ios-location-outline"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Address</h5>
+                                        <p>4925 Treeline Dr, Brunswick OH 44212</p>
+                                    </div>
+                                </div>
+                                <div class="contact-content">
+                                    <div class="contact-icon">
+                                        <i class="ion-ios-telephone-outline"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Call Me</h5>
+                                        <p> <a href="tel:+12166187751">+1 - 2166187751</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-content">
+                                    <div class="contact-icon">
+                                        <i class="ion-ios-email-outline"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Enquiries</h5>
+                                        <p>rodo.andrade00111@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <!--Google Map-->
+                                <div id="map"></div>
+                                <!--Google Map End-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="content-blocks pop">
+                <div id="close-pop" class="close-pop">Close <i class="ion-ios-close-empty"></i></div>
+                <section class="content"></section>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <main role="main">
-
-    <section class="jumbotron text-center">
-      <div class="container py-5">
-        <h1 class="jumbotron-heading" style="font-family: 'Tangerine', cursive;">Rodo Andrade</h1>
-        <p class="lead text-muted">
-          Experienced Software Engineer with a demonstrated history of working in the insurance, and automation
-          industries. Strong engineering professional skilled in C#, VB.NET, SQL, .NET, HTML, Javascript, Jquery, CSS,
-          MVC,
-          Leadership, and Portuguese.
-        </p>
-      </div>
     </section>
-
-    <section class="album py-5 bg-light">
-      <div class="container">
-        <section>
-          <!--Content -->
-
-          <!-- Ohio Spiritism -->
-          <div class="blog-card">
-            <div class="meta">
-              <div class="photo" style="background-image: url(./Images/Thumbnails/OhioSpiritism.png);" onclick="window.location.href='https://www.ohiospiritism.com'"></div>
-              <ul class="details" onclick="window.location.href='https://www.ohiospiritism.com'">
-                <li><a href="https:/www.ohiospiritism.com">Ohio Spiritism</a></li>
-                <li>Published - November 16, 2018</li>
-              </ul>
-            </div>
-            <div class="description">
-              <h1>Ohio Spiritism <a class="py-1" href="https://github.com/rma25/ohiospiritism"><i class="fab fa-github"></i></a></h1>
-              <h2>Front End</h2>
-              <p>
-                Responsive multilingual website meant to display some of my published Front
-                End work, using the following Tech Stack:
-                <div class="py-2">
-                  <div class="row">
-                    <div class="col">
-                      <ul>
-                        <li> HTML </li>
-                        <li> CSS </li>
-                        <li> Bootstrap 4 </li>
-                        <li> Javascript </li>
-                        <li> Jquery </li>
-                        <li> English, Portuguese </li>
-                        <li> SEO </li>
-                        <li> Google Maps API</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="row">
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/html5.png"
-                              data-src="./Images/Logos/html5.png" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/bootstrap.png"
-                              data-src="./Images/Logos/bootstrap.png" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/javascript.jpeg"
-                              data-src="./Images/Logos/javascript.jpeg" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/jquery.png"
-                              data-src="./Images/Logos/jquery.png" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/googlemaps.png"
-                              data-src="./Images/Logos/googlemaps.png" alt="Card image cap">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                Also, did some Web & Search Engine Optimization, for performance, accessibility, and organic search
-                purposes (currently #1 Google search result).
-              </p>
-              <p class="read-more">
-                <button class="btn btn-primary" onclick="window.location.href='https://www.ohiospiritism.com'">Read
-                  More</button>
-              </p>
-            </div>
-          </div>
-
-          <!-- Cookies Gallery -->
-          <div class="blog-card alt">
-            <div class="meta">
-              <div class="photo" style="background-image: url(./Images/Thumbnails/CookiesGallery.png)" onclick="window.location.href='https://cookiesgallery.com/'"></div>
-              <ul class="details" onclick="window.location.href='https://cookiesgallery.com/'">
-                <li><a href="https://www.cookiesgallery.com">Cookie's Gallery</a></li>
-                <li>Published - November 25, 2018</li>
-              </ul>
-            </div>
-            <div class="description">
-              <h1>Cookie's Gallery <a class="py-1" href="https://github.com/rma25/cookiesgallery"><i class="fab fa-github"></i></a></h1>
-              <h2>Front End</h2>
-              <p>
-                Responsive website meant to be an album with pictures of my dogs that were posted on Instagram, using
-                the following Tech Stack:
-                <div class="py-2">
-                  <div class="row">
-                    <div class="col">
-                      <ul>
-                        <li> HTML </li>
-                        <li> CSS </li>
-                        <li> Bootstrap 4 </li>
-                        <li> Javascript </li>
-                        <li> Jquery </li>
-                        <li> SEO </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="row">
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/html5.png"
-                              data-src="./Images/Logos/html5.png" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/bootstrap.png"
-                              data-src="./Images/Logos/bootstrap.png" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/javascript.jpeg"
-                              data-src="./Images/Logos/javascript.jpeg" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/jquery.png"
-                              data-src="./Images/Logos/jquery.png" alt="Card image cap">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                Also, did some Web & Search Engine Optimization, for performance, accessibility, and organic search
-                purposes.
-              </p>
-              <p class="read-more">
-                <button class="btn btn-primary" onclick="window.location.href='https://cookiesgallery.com/'">Read More</button>
-              </p>
-            </div>
-          </div>
-
-          <!-- Board Squares -->
-          <div class="blog-card alt">
-            <div class="meta">
-              <div class="photo" style="background-image: url(./Images/Thumbnails/BoardSquares.png)" onclick="window.location.href='./BoardSquares/index.html'"></div>
-              <ul class="details" onclick="window.location.href='./BoardSquares/index.html'">
-                <li><a href="./BoardSquares/index.html">Board Squares</a></li>
-                <li>Published - December 10, 2018</li>
-              </ul>
-            </div>
-            <div class="description">
-              <h1>Board Squares <a class="py-1" href="https://github.com/rma25/BoardSquares"><i class="fab fa-github"></i></a></h1>
-              <h2>Front End</h2>
-              <p>
-                Responsive multilingual website meant to display some of my published Front
-                End work, using the following Tech Stack:
-                <div class="py-2">
-                  <div class="row">
-                    <div class="col">
-                      <ul>
-                        <li> HTML </li>
-                        <li> CSS </li>
-                        <li> Bootstrap 4 </li>
-                        <li> Javascript </li>
-                        <li> Jquery </li>
-                        <li> SEO </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="row">
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/html5.png"
-                              data-src="./Images/Logos/html5.png" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/bootstrap.png"
-                              data-src="./Images/Logos/bootstrap.png" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/javascript.jpeg"
-                              data-src="./Images/Logos/javascript.jpeg" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/jquery.png"
-                              data-src="./Images/Logos/jquery.png" alt="Card image cap">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                Also, did some Web & Search Engine Optimization, for performance, accessibility, and organic search
-                purposes.
-              </p>
-              <p class="read-more">
-                <button class="btn btn-primary" onclick="window.location.href='./BoardSquares/index.html'">Read More</button>
-              </p>
-            </div>
-          </div>
-
-          <!-- First And Last -->
-          <div class="blog-card alt">
-            <div class="meta">
-              <div class="photo" style="background-image: url(./Images/Thumbnails/FirstAndLast.png)" onclick="window.location.href='https://firstandlast-rodoandrade.c9users.io/'"></div>
-              <ul class="details" onclick="window.location.href='https://firstandlast-rodoandrade.c9users.io/'">
-                <li><a href="https://firstandlast-rodoandrade.c9users.io/">First And Last</a></li>
-                <li>Published - December 15, 2018</li>
-              </ul>
-            </div>
-            <div class="description">
-              <h1>First And Last <a class="py-1" href="https://github.com/rma25/FirstAndLast"><i class="fab fa-github"></i></a></h1>
-              <h2>Full Stack</h2>
-              <p>
-                (Currently Working on it) Responsive Web Game meant to display some of my published Front
-                End work, using the following Tech Stack:
-                <div class="py-2">
-                  <div class="row">
-                    <div class="col">
-                      <ul>
-                        <li> AWS </li>
-                        <li> Express.js </li>
-                        <li> Node.js </li>
-                        <li> EJS </li>
-                        <li> HTML </li>
-                        <li> CSS </li>
-                        <li> Javascript </li>
-                        <li> Phaser 3 </li>
-                        <li> SEO </li>
-                        <li> Body-parser </li>
-                        <li> Socket.io </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="row">
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/aws.jpg"
-                              data-src="./Images/Logos/aws.jpg" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/html5.png"
-                              data-src="./Images/Logos/html5.png" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/expressjs.png"
-                              data-src="./Images/Logos/expressjs.png" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/javascript.jpeg"
-                              data-src="./Images/Logos/javascript.jpeg" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/jquery.png"
-                              data-src="./Images/Logos/jquery.png" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/phaser.jpeg"
-                              data-src="./Images/Logos/phaser.jpeg" alt="Card image cap">
-                          </div>
-                        </div>
-                        <div class="col-3 col-md-4">
-                          <div class="card mb-4 shadow-sm"> <img class="card-img-top imgDefer" src="./Images/Logos/nodejs.png"
-                              data-src="./Images/Logos/nodejs.png" alt="Card image cap">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                Also, did some Web & Search Engine Optimization, for performance, accessibility, and organic search
-                purposes.
-              </p>
-              <p class="read-more">
-                <button class="btn btn-primary" onclick="window.location.href='https://firstandlast-rodoandrade.c9users.io/'">Read
-                  More</button>
-              </p>
-            </div>
-          </div>
-
-        </section>
-
-        <!-- Button To Top -->
-        <footer class="hideEverything btnShow container py-3" id="btnTopContainer">
-          <div class="backToTopButton">
-            <button type="button" name="backToTopButton" aria-hidden="true" aria-labelledby="backToTopButton" class="btn btn-dark rounded-circle grow animated bounce infinite delay-2s slower"
-              onclick="topFunction();"><i class="fas fa-arrow-up backToTopIcon"></i></button>
-          </div>
-        </footer>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="./Scripts/Jquery-3.3.1.js"></script>
-  <script src="./Scripts/popper.min.js"></script>
-  <script src="./Styles/bootstrap/js/bootstrap.min.js"></script>
-  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-  <script src="./Scripts/holder.min.js"></script>
-
-  <!--Custom-->
-  <script src="./Scripts/Custom/rodoandrade.js"></script>
-  <script src="./Scripts/Custom/DeferImages.js"></script>
-
+    <script src="js/plugins.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeKdCmxtnQ-6QzFz8Ufp0p1pwr-WDeMu8&amp;callback=initMap"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
