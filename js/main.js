@@ -133,7 +133,7 @@
 		$('.menu-item.blog').addClass('active');
 	});
 	//On Click Open Contact Block
-	$('.contact-block, .menu-item.contact, .btn-email').on('click', function () {
+	$('.contact-block, .menu-item.contact, .contactMeBtn').on('click', function () {
 		$('.content-blocks').removeClass('showx');
 		$('.content-blocks.contact').addClass('showx');
 		$('.menu-item').removeClass('active');
@@ -168,6 +168,20 @@
 		$('.menu-item').removeClass('active');
 		$(this).addClass('active');
 		$('.inline-menu-container.style2').removeClass('dark');
-	});		
+	});
 
+	$('#closeAndContactMe').on('click', function () {
+		consonle.log('trying to close');
+
+		//Closes the details page
+		$('.content-blocks.pop').removeClass('showx');
+		$('.sidebar-menu').removeClass('hidex');
+		$('.inline-menu-container').addClass('showx');
+		$('.content-blocks.pop section').empty();
+		//Open Contact Me page
+		$('.content-blocks').removeClass('showx');
+		$('.content-blocks.contact').addClass('showx');
+		$('.menu-item').removeClass('active');
+		$('.menu-item.contact').addClass('active');
+	});
 })(jQuery);
