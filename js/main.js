@@ -47,7 +47,6 @@
 	});
 
 	$('.portfolio-block, .menu-item').on('click', function () {
-
 		//Portfolio masonry
 		var $container = $('#portfolio-container');
 		$container.isotope({
@@ -134,7 +133,7 @@
 		$('.menu-item.blog').addClass('active');
 	});
 	//On Click Open Contact Block
-	$('.contact-block, .menu-item.contact').on('click', function () {
+	$('.contact-block, .menu-item.contact, .btn-email').on('click', function () {
 		$('.content-blocks').removeClass('showx');
 		$('.content-blocks.contact').addClass('showx');
 		$('.menu-item').removeClass('active');
@@ -170,8 +169,5 @@
 		$(this).addClass('active');
 		$('.inline-menu-container.style2').removeClass('dark');
 	});		
-
-	// Intialize Map
-	google.maps.event.addDomListener(window, 'load', initMap);
 
 })(jQuery);

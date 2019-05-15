@@ -13,13 +13,13 @@
     <title>Rodo Andrade</title>
 
     <!-- Web Logo -->
-    <link rel="icon" href="./images/Icons/ra.ico" />
+    <link async rel="icon" href="./images/Icons/ra.ico" />
 
     <!-- Google Fonts -->
     <link async rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 
     <!--Styles-->
-    <link async rel="stylesheet" href="./css/plugins.min.css" type="text/css" media="screen" />
+    <link defer rel="stylesheet" href="./css/plugins.min.css" type="text/css" media="screen" />
     <link async rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
 </head>
 
@@ -308,7 +308,7 @@
                     </div> -->
                     <div class="row text-center">
                         <div class="col-md-12 btn-email">
-                            <a class="btn lowercase">rodoandrade.com</a>
+                            <a class="btn lowercase">Contact me</a>
                         </div>
                     </div>
                 </section>
@@ -432,7 +432,7 @@
                     </div>
                     <div class="row text-center">
                         <div class="col-md-12 btn-email">
-                            <a class="btn lowercase">rodoandrade.com</a>
+                            <a class="btn lowercase">Contact me</a>
                         </div>
                     </div>
                 </section>
@@ -447,19 +447,20 @@
                                 <form id="contactForm" data-toggle="validator" class="contact-form shake">
                                     <div class="form-group">
                                         <input id="name" type="text" class="form-control" name="Name" autocomplete="off"
-                                            aria-label="Name" aria-describedby="Name" required
+                                            aria-label="Name" aria-describedby="Name" required aria-hidden="false"
                                             data-error="Please enter your name" placeholder="* Your Name">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
                                         <input id="email" type="email" class="form-control" name="email"
-                                            aria-label="Email" aria-describedby="Email" autocomplete="off" required
-                                            data-error="Please enter your email" placeholder="* Your Email">
+                                            aria-hidden="false" aria-label="Email" aria-describedby="Email"
+                                            autocomplete="off" required data-error="Please enter your email"
+                                            placeholder="* Your Email">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
                                         <textarea id="message" class="form-control textarea" rows="10" name="Message"
-                                            aria-label="Message" aria-describedby="Message" required
+                                            aria-label="Message" aria-describedby="Message" required aria-hidden="false"
                                             data-error="Please enter your message subject"
                                             placeholder="* Your Message"></textarea>
                                         <div class="help-block with-errors"></div>
@@ -499,12 +500,7 @@
                                         <p>rodo.andrade00111@gmail.com</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-12">
-                                <!--Google Map-->
-                                <div id="map"></div>
-                                <!--Google Map End-->
-                            </div>
+                            </div>                         
                         </div>
                     </div>
                 </section>
@@ -520,29 +516,7 @@
 
     <!-- Scripts -->
     <script src="./js/plugins.min.js"></script>
-    <script>
-        // Initialize and add the map (this function is necessary to be placed here to avoid console errors with google maps)
-        function initMap() {
-            // The location of Uluru
-            var uluru = { lat: 41.2381519, lng: -81.8411403 };
-            // The map, centered at Uluru
-            var map = new google.maps.Map(
-                document.getElementById('map'), {
-                    zoom: 13,
-                    center: uluru,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    scrollwheel: false
-                });
-
-
-            // The marker, positioned at Uluru
-            var marker = new google.maps.Marker({ position: uluru, map: map, size: new google.maps.Size(43, 59) });
-
-            google.maps.event.addListener(marker, 'click', function () {
-                window.location.href = "https://www.google.com/maps/@41.2381519,-81.8411403,3a,75y,251.92h,90t/data=!3m7!1e1!3m5!1sKUv9pzXLITmaTYoz_mM1-Q!2e0!6s%2F%2Fgeo1.ggpht.com%2Fcbk%3Fpanoid%3DKUv9pzXLITmaTYoz_mM1-Q%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D246.52924%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656";
-            }, { passive: true});
-        }
-
+    <script async>        
         //Custom Script for Engine Optimization
         //This is inline to eliminate render - blocking resources
         function DeferImages() {
@@ -555,9 +529,7 @@
         }
 
         window.onload = DeferImages;
-    </script>
-    <script 
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeKdCmxtnQ-6QzFz8Ufp0p1pwr-WDeMu8&amp;callback=initMap"></script>
+    </script>     
     <script async src="./js/main.js"></script>
 </body>
 
