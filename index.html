@@ -96,7 +96,12 @@
                             <!-- <div class="col-sm-6"><span>Skype : </span> James.Bond</div> -->
                             <div class="col-sm-6"><span>Interest : </span> freelance, full-time</div>
                         </div>
-                        <img class="sign" src="./images/signature.PNG" alt="" />
+                        <picture>
+                            <source srcset="./images/signature.webp" type="image/webp">
+                            <img class="sign imgDefer"
+                                src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-src="./images/signature.png" alt="" />
+                        </picture>
                     </div>
                     <div class="block-content">
                         <h3 class="block-title">Skills</h3>
@@ -269,7 +274,12 @@
                         <h3 class="block-title">Awards</h3>
                         <div class="row">
                             <div class="col awards">
-                                <img src="./images/Awards/certificate-1.PNG" alt="" />
+                                <picture>
+                                    <source srcset="./images/Awards/certificate-1.webp" type="image/webp">
+                                    <img class="imgDefer"
+                                        src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                        data-src="./images/Awards/certificate-1.png" alt="" />
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -337,7 +347,9 @@
                                                 <picture>
                                                     <source srcset="./images/Portfolio/OhioSpiritism.webp"
                                                         type="image/webp">
-                                                    <img src="./images/Portfolio/OhioSpiritism.png" alt="">
+                                                    <img class="imgDefer"
+                                                        src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                                        data-src="./images/Portfolio/OhioSpiritism.png" alt="">
                                                 </picture>
                                             </div>
                                         </a>
@@ -358,7 +370,9 @@
                                                 <picture>
                                                     <source srcset="./images/Portfolio/BoardSquares.webp"
                                                         type="image/webp">
-                                                    <img src="./images/Portfolio/BoardSquares.png" alt="">
+                                                    <img class="imgDefer"
+                                                        src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                                        data-src="./images/Portfolio/BoardSquares.png" alt="">
                                                 </picture>
                                             </div>
                                         </a>
@@ -379,7 +393,9 @@
                                                 <picture>
                                                     <source srcset="./images/Portfolio/CookiesGallery.webp"
                                                         type="image/webp">
-                                                    <img src="./images/Portfolio/CookiesGallery.png" alt="">
+                                                    <img class="imgDefer"
+                                                        src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                                        data-src="./images/Portfolio/CookiesGallery.png" alt="">
                                                 </picture>
                                             </div>
                                         </a>
@@ -400,7 +416,9 @@
                                                 <picture>
                                                     <source srcset="./images/Portfolio/FirstAndLast.webp"
                                                         type="image/webp">
-                                                    <img src="./images/Portfolio/FirstAndLast.png" alt="">
+                                                    <img class="imgDefer"
+                                                        src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                                        data-src="./images/Portfolio/FirstAndLast.png" alt="">
                                                 </picture>
                                             </div>
                                         </a>
@@ -516,6 +534,19 @@
                 window.location.href = "https://www.google.com/maps/place/4925+Treeline+Dr,+Brunswick,+OH+44212/@41.2510194,-81.8659219,17z/data=!3m1!4b1!4m5!3m4!1s0x8830c0a0f9359ea1:0x17be4adf59a3006a!8m2!3d41.2510194!4d-81.8637332";
             });
         }
+
+        //Custom Script for Engine Optimization
+        //This is inline to eliminate render - blocking resources
+        function DeferImages() {
+            var imgDefer = document.getElementsByTagName("img");
+            for (var i = 0; i < imgDefer.length; i++) {
+                if (imgDefer[i].className.includes("imgDefer")) {
+                    imgDefer[i].setAttribute('src', (imgDefer[i].getAttribute('data-src')));
+                }
+            }
+        }
+
+        window.onload = DeferImages;
     </script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeKdCmxtnQ-6QzFz8Ufp0p1pwr-WDeMu8&amp;callback=initMap"></script>
