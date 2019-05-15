@@ -41,7 +41,7 @@
     <section class="home img-bg" style="background: url(./images/coder-1.jpg) 0 0; background-size: cover;">
         <div class="overlay opacity5"></div>
         <div class="container">
-            <div class="name-block">
+            <div class="name-block" id="mainPage">
                 <div class="name-block-container">
                     <h1><span>Hi, I'm</span>Rodo Andrade</h1>
                     <h2>Software Engineer</h2>
@@ -474,12 +474,33 @@
             <div class="content-blocks pop">
                 <div id="close-pop" class="close-pop">Close <i class="ion-ios-close-empty"></i></div>
                 <section class="content">
-
+                    <!-- Display through plugin -->
                 </section>
             </div>
         </div>
     </section>
     <script src="./js/plugins.min.js"></script>
+    <script>
+    // Initialize and add the map (this function is necessary to be placed here to avoid console errors with google maps)
+	function initMap() {
+		// The location of Uluru
+		var uluru = { lat: 41.2509172, lng: -81.8639405 };
+		// The map, centered at Uluru
+		var map = new google.maps.Map(
+			document.getElementById('map'), {
+				zoom: 13,
+				center: uluru,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				scrollwheel: false
+			});
+		// The marker, positioned at Uluru
+		var marker = new google.maps.Marker({ position: uluru, map: map });
+
+		google.maps.event.addListener(marker, 'click', function () {
+			window.location.href = "https://www.google.com/maps/place/4925+Treeline+Dr,+Brunswick,+OH+44212/@41.2510194,-81.8659219,17z/data=!3m1!4b1!4m5!3m4!1s0x8830c0a0f9359ea1:0x17be4adf59a3006a!8m2!3d41.2510194!4d-81.8637332";
+		});
+    }
+    </script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeKdCmxtnQ-6QzFz8Ufp0p1pwr-WDeMu8&amp;callback=initMap"></script>
     <script src="./js/main.js"></script>

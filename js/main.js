@@ -142,7 +142,7 @@
 	});
 
 	//On Click Close Blocks
-	$('#close').on('click', function () {
+	$('#close, #mainPage').on('click', function () {
 		$('.name-block').removeClass('reverse');
 		$('.name-block-container').removeClass('reverse');
 		$('.content-blocks').removeClass('showx');
@@ -150,6 +150,7 @@
 		$('.inline-menu-container').removeClass('showx');
 		$('.menu-item').removeClass('active');
 	});
+
 	//On Click Close Blog Post And Project Details
 	$('#close-pop').on('click', function () {
 		$('.content-blocks.pop').removeClass('showx');
@@ -168,29 +169,9 @@
 		$('.menu-item').removeClass('active');
 		$(this).addClass('active');
 		$('.inline-menu-container.style2').removeClass('dark');
-	});
+	});		
 
 	// Intialize Map
 	google.maps.event.addDomListener(window, 'load', initMap);
-
-	// Initialize and add the map
-	function initMap() {
-		// The location of Uluru
-		var uluru = { lat: 41.2509172, lng: -81.8639405 };
-		// The map, centered at Uluru
-		var map = new google.maps.Map(
-			document.getElementById('map'), {
-				zoom: 13,
-				center: uluru,
-				mapTypeId: google.maps.MapTypeId.ROADMAP,
-				scrollwheel: false
-			});
-		// The marker, positioned at Uluru
-		var marker = new google.maps.Marker({ position: uluru, map: map });
-
-		google.maps.event.addListener(marker, 'click', function () {
-			window.location.href = "https://www.google.com/maps/place/4925+Treeline+Dr,+Brunswick,+OH+44212/@41.2510194,-81.8659219,17z/data=!3m1!4b1!4m5!3m4!1s0x8830c0a0f9359ea1:0x17be4adf59a3006a!8m2!3d41.2510194!4d-81.8637332";
-		});
-	}
 
 })(jQuery);
