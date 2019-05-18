@@ -10,7 +10,7 @@
             </div>
         </div>
         <p class="project-description">
-            Responsive multilingual website meant to display pictures of my dog.
+            Responsive website meant to display pictures of my dog.
         </p>
         <div class="project-media row">
             <div class="col-md-6">
@@ -39,31 +39,13 @@
                 <a class="open-project" href="./details/firstandlast-detail.html">Next Project &rightarrow; </a>
             </span>
         </div>
-    </div>
-    <div class="row text-center">
-        <div class="col-md-12 btn-email contactMeBtn">
-            <a class="btn lowercase">Contact me</a>
-        </div>
-    </div>
+    </div>  
 
     <script>
         $('#close-project').on('click', function () {
             $('.content-blocks.pop').removeClass('showx');
             $('.inline-menu-container').addClass('showx');
             $('.content-blocks.pop section').empty();
-        });
-
-        $('.contactMeBtn').on('click', function () {
-            //Closes the details page
-            $('.content-blocks.pop').removeClass('showx');
-            $('.sidebar-menu').removeClass('hidex');
-            $('.inline-menu-container').addClass('showx');
-            $('.content-blocks.pop section').empty();
-            //Open Contact Me page
-            $('.content-blocks').removeClass('showx');
-            $('.content-blocks.contact').addClass('showx');
-            $('.menu-item').removeClass('active');
-            $('.menu-item.contact').addClass('active');
-        });
+        });       
     </script>
 </div>
