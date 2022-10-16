@@ -132,13 +132,6 @@
 		$('.menu-item').removeClass('active');
 		$('.menu-item.blog').addClass('active');
 	});
-	//On Click Open Contact Block
-	$('.contact-block, .menu-item.contact, .contactMeBtn').on('click', function () {
-		$('.content-blocks').removeClass('showx');
-		$('.content-blocks.contact').addClass('showx');
-		$('.menu-item').removeClass('active');
-		$('.menu-item.contact').addClass('active');
-	});
 
 	//On Click Close Blocks
 	$('#close, #mainPage').on('click', function () {
