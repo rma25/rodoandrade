@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Cookies Gallery, Cookie Dog, Poopy Chicken, Ohio, Shih Tzu, Puppy, Cookie, Cookie's Gallery, Gallery, Rodo Andrade">
+  <meta name="description" content="This a photo gallery for my dog Cookie.">
+  <meta name="author" content="Rodo Andrade">
+  <!-- LinkedIn: https://www.linkedin.com/in/rodoandrade/-->
+
+  <link rel="icon" href="./Images/Logos/cookie-icon.ico">
+  <title>Cookie's Gallery</title>
+
+  <!-- Apache License for ServiceWorker-->
+  <!-- http://www.apache.org/licenses/LICENSE-2.0 -->
+
+  <!--Font Awesome Icons-->
+  <!--License https://fontawesome.com/license/free-->
+  <link rel="stylesheet" href="./Styles/fonts/fontawesome-free-5.5.0-web/css/all.min.css">
+
+  <!-- Bootstrap 4 core CSS -->
+  <link href="./Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate -->
+  <!-- License https://github.com/daneden/animate.css/blob/master/LICENSE-->
+  <link rel="stylesheet" href="./Styles/Animate3.7.0.css">
+
+  <!-- Custom styles for this template --> 
+  <link href="./Styles/Custom/CookiesGallery.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top  bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+            <circle cx="12" cy="13" r="4"></circle>
+          </svg>
+          <strong>Cookie's Gallery</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item grow">
+              <a class="nav-link py-1" href="https://www.instagram.com/cookie_brownsugarcute/"><img class="rounded" src="./Images/Logos/instagram_35x35.png"
+                  alt="Instagram Logo"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <section class="jumbotron text-center">
+      <div class="container py-5">
+        <h1 class="jumbotron-heading">Cookie's Gallery</h1>
+        <p class="lead text-muted">No matter how bad my day is, Cookie always brightens it up. Cookie was born on
+          February 23rd, 2018. She loves anything and anyone. I hope she brightens your day as she does to me.</p>
+      </div>
+    </section>
+
+    <section class="album py-5 bg-light">
+      <div class="container">
+        <div class="row" id="cookiesContent">
+          <!-- Displayed through Javascript-->
+        </div>
+        <!-- Button To Top -->
+        <section class="btnHide py-5 my-5" id="btnTopContainer">
+          <div class="backToTopButton">
+            <button type="button" name="backToTopButton" aria-hidden="true" aria-labelledby="backToTopButton" class="btn btn-dark rounded-circle grow animated bounce infinite delay-2s slower"
+              onclick="topFunction();"><i class="fas fa-arrow-up backToTopIcon"></i></button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="./Scripts/Jquery-3.3.1.js"></script>
+  <script src="./Scripts/popper.min.js"></script>
+  <script src="./Styles/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="./Scripts/holder.min.js"></script>
+
+  <!--Custom-->
+  <script src="./Scripts/Custom/CookiesGallery.js"></script>
+  <script src="./Scripts/Custom/DeferImages.js"></script>
+
+</body>
+
+</html>
